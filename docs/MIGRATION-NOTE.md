@@ -1,20 +1,16 @@
 # Migration Note — NameSprint
 
-**Prepared:** 18 September 2026
+**Prepared:** 18 September 2026  
+**Status:** Historical migration note; source-status section superseded on 18 September 2026.
 
-This file records the initial move from chat-centered project history toward a repository-centered canonical record.
+The canonical source identity is now recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). Earlier statements that the source, filename, version or repository checkpoint was “TO ESTABLISH” are no longer current.
 
-## Source status at migration
+## Resolved source status
 
-A standalone offline HTML build exists; exact filename/version is TO ESTABLISH from the latest local known-good file before substantive revision.
+Canonical preserved source: `NameSprint.html`, Git blob `a37fcdb8ecbf2c6c20870ded5f2262abf10d4007`, at source checkpoint `da7fccb1fa5e92449a682ba2689a01b890174233`. No semantic application version is established; backup schema version 3 is not an app release number.
 
-## What to do next
+## Remaining work
 
-1. Identify the exact latest known-good source artifact.
-2. Place/confirm it in this repository.
-3. Update `PROJECT-BRIEF.md` with the exact version/commit.
-4. Copy any unique approved historical specification that is still needed into `docs/change-specs/`.
-5. Verify the repository source can be opened/built/deployed as appropriate.
-6. Only after unique project state is safely preserved should historical monster chats be treated as disposable.
+Use the committed `NameSprint.html` as the baseline, preserve local-only privacy behavior, and assign an app version only through a future verified release.
 
-This migration note is not a release specification and does not authorize new features.
+This note is not a release specification and does not authorize new features. Functional, device and deployment verification remain separate from source preservation.
