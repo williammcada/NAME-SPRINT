@@ -1,12 +1,12 @@
 # Project Brief — NameSprint
 
-**Brief version:** 0.2 — audited documentation revision  
+**Brief version:** 0.3 — source-baseline normalization  
 **Owner:** William McAda · **Credit:** A WILLIAM MCADA PRODUCT  
-**Status:** Revised record for owner review; not an application release or fresh feature approval.  
-**Repository destination:** williammcada/NameSprint (verify existence/current branch before source edits).  
-**Current running version:** Not independently verified in this documentation task.  
-**Source/baseline:** Existing NameSprint.html recorded; backup format version 3 is a data schema, not proof app release v3.  
-**Next work:** Preserve local-only app; select exact source/version before revisions.
+**Status:** Canonical source identity reconciled; release, functional and deployment verification remain separately stated.  
+**Repository:** `williammcada/NAME-SPRINT`, branch `main`.  
+**Current running version:** Not independently verified. Exact committed source identity and byte preservation are established; semantic release version is not established.  
+**Source/baseline:** Canonical preserved source: `NameSprint.html`, Git blob `a37fcdb8ecbf2c6c20870ded5f2262abf10d4007`, at source checkpoint `da7fccb1fa5e92449a682ba2689a01b890174233`. No semantic application version is established; backup schema version 3 is not an app release number.  
+**Next work:** Use the committed `NameSprint.html` as the baseline, preserve local-only privacy behavior, and assign an app version only through a future verified release.  
 
 ## 1. Purpose, audience and detailed scope
 
@@ -19,7 +19,7 @@
 
 ## 2. This task and boundaries
 
-This revision repairs documentation only. It does not implement features, run application tests, upload source, deploy a site, or alter a repository. Retain the exact current source before implementation. Historical reported functionality is a preservation checklist to reconcile against that source, not permission to recreate the program from prose.
+This normalization establishes the exact repository source path, Git object identity and source-preservation checkpoint; creates the linked migration baseline; and retires stale pre-upload source-status wording. It does not change application behavior, approve new features, rerun product tests or convert source preservation into a release claim.
 
 ## 3. Standards and adoption
 
@@ -34,17 +34,17 @@ The detailed scope above is the feature-preservation inventory. Preserve existin
 
 ## 5. Source, release and deployment discipline
 
-Existing NameSprint.html recorded; backup format version 3 is a data schema, not proof app release v3.
+Canonical preserved source: `NameSprint.html`, Git blob `a37fcdb8ecbf2c6c20870ded5f2262abf10d4007`, at source checkpoint `da7fccb1fa5e92449a682ba2689a01b890174233`. No semantic application version is established; backup schema version 3 is not an app release number.
 
-Record exact selected source filename/hash and repository commit when importing it; record live URL/version only after actually opening it. Unknown commit does not mean the product is unbuilt.
+See [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md) for the authoritative source manifest and the checks actually performed.
 
 DESIGN → CHANGE SPEC → IMPLEMENT → CHECKPOINT → VERIFY → VERIFIED CHECKPOINT → RELEASE → DEPLOY.
 
-Use “implementation checkpoint” or “release candidate” before verification. Preserve candidate bytes and logs before packaging; recover that checkpoint after a ZIP/upload failure. Do not rebuild a verified implementation to fix delivery. Repository upload and website deployment are different operations; existing automatic deployments may run when main changes.
+Use “implementation checkpoint” or “release candidate” before verification. Preserve candidate bytes and logs before packaging; recover that checkpoint after a ZIP/upload failure. Do not rebuild a verified implementation to fix delivery. Repository upload and website deployment are different operations.
 
 ## 6. Known issues, conflicts and open evidence
 
-Source/version selection and per-browser storage behavior remain unverified. Import parsing and roster/photo matching must be tested with synthetic people.
+Exact source selection is resolved as `NameSprint.html`. Semantic application version, per-browser storage behavior, import parsing and roster/photo matching remain unverified and must be tested with synthetic people.
 
 | Conflict or risk | Required handling |
 | --- | --- |
@@ -59,7 +59,7 @@ Test local imports, verified photo matching, each practice mode, class mastery/a
 
 | Evidence required | Result in this task |
 | --- | --- |
-| Exact source candidate/commit identified and preserved | Not run — documentation revision only |
+| Exact source candidate/commit identified and preserved | Passed — canonical path and source checkpoint recorded in `docs/MIGRATION-BASELINE.md`; no functional verification inferred |
 | Project-specific checks above, with inputs and expected/actual results | Not run |
 | Save/import/export and malformed-input regression | Not run |
 | Intended devices and real deployment path, where applicable | Not run |
@@ -68,6 +68,8 @@ Test local imports, verified photo matching, each practice mode, class mastery/a
 The next build report must name the candidate, environment and test results; historical reports of passing tests do not transfer to a changed candidate.
 
 ## 8. Handoff and provenance
+
+Current source identity is recorded in [`MIGRATION-BASELINE.md`](MIGRATION-BASELINE.md). That manifest supersedes earlier unknown-source or pre-upload statements while preserving the original migration note as history.
 
 Required project records: NameSprint.html; synthetic roster/photo fixtures; schema-3 backup example stripped of real data.
 
@@ -78,4 +80,3 @@ Before substantive implementation retrieve these records, the current source, ap
 ## 9. Ecosystem boundary
 
 Shared principles do not establish shared code, accounts or interfaces. MathQuest is engagement, TestForge assessment design, GradePal learner-level evidence, and DataDiver institutional analytics. Integration remains separately specified unless confirmed in source. Other projects remain independent unless their brief explicitly says otherwise.
-
